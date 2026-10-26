@@ -1,0 +1,36 @@
+Ollama Key
+Key: ollama-api-key1
+Value: 24f4c61b46e14c93baa5140b90975e53.t8mT_fIObaNo1XSCy6swJYP9
+
+LangChain:
+*) LangChain framework allows AI developer to use multiple AI platforms without changing the code itself
+1) LangChain allows developers to work in AI platform independent fashion
+How many sick leaves allowed per year in Zensar?
+2) Using LangChain you can provide private documents to LLM with RAG
+How is the weather in Pune today?
+3) LangChain allows to connect to internet for providing public domain information
+
+LangChain framework has below building blocks:
+1) Model
+2) Prompts
+3) Memory
+4) Chains
+5) Vector database
+6) Tools/Agents
+
+LangChain Prompts:
+prompt: "Which is the capital city of India?"
+// OR
+2nd prompt: "Which is the capital city of {country}?"
+
+As AI developer, we do not write prompt, we write prompt template...
+Prompt template: "Which is the capital city of {country}?"
+Prompt template: "Which is the capital city of {country} {pin_code}?"
+
+LangChain prompts provides 2 fundamental classes for prompt tempaltes:
+1) PromptTemplate
+2) ChatPromptTemplate
+   AI Roles:
+   1) User - Prompt sent by the user
+   2) System - ROle playes by the LLM
+   3) Assistant - Role used by LLM in the response
