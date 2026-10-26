@@ -1,0 +1,29 @@
+Today's Agenda
+Prompt engg - Prompt Engineering
+Output parsers
+
+In future session a new term will be taught: Guardrails, it prevents harmful behaviour by restricting prompts
+
+- Output Parser - can help in getting response particualr type
+
+LangChain Chains are used to implement the workflow within AI application.
+
+3 types of LangChain Chains:
+1) Sequential chains
+2) Parallel chains
+3) Conditional chains
+
+if (sentiment_prompt is positive)
+  positive_prompt
+if (sentiment_prompt is negative)
+  negative_prompt
+
+Prompt: Please give me list of only names of top 5 countries by their economy size
+
+LangChain building blocks:
+Models
+Prompts (Prompttemplate & ChatPromptTemplate)
+Chains (deprecated)
+Memory (deprecated)
+Vector embeddings - RAG
+Tools/Agents
