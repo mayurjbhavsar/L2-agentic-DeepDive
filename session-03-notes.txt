@@ -1,0 +1,143 @@
+Today's goal is to see Tokenization 
+
+Tokenization library - in library word have same number
+
+Words are broken for tokens if word is building
+
+TickToken is free tokenization library
+
+LLM cannot work with Other LLM's token library
+
+"Token is an AI currency"
+"Distance is a currency of private cabs"
+
+For example:
+Model - gpt-oss-120b-cloud
+Rates:
+    Input token rate: Rs 1/- per input token
+    Output token rate: Rs 2/- per output token
+
+Total cost of my prompt = 74*1 + 44*2 + = 74 + 88 = Rs. 162/-
+
+Output tokens are more costly than input tokens
+
+Prompt_1: "Explain Generative AI"
+
+Prompt_2: "Give me names of capital city of India"
+New Delhi
+
+Write descriptive and specific prompts so that you can control the size of output tokens
+
+9 subtopics on Tokenization - need to see the video again
+Module 1: Tokenization basics
+Module 2: Sample Tokenization program
+Module 3: AI Tokens
+Module 4: How Modules Use Tokens During Training?
+Module 5: Mode Context Window
+Module 6: Reasonong Tokens
+Module 7: Multimodal Tokenization
+Module 8: What is Tokenomics?
+Module 9: Pillars of Tokenomics
+
+Tokenization basics
+. Tokenization is the process of breaking text into smaller units called tokens, which
+  helps machines process and analyze language effectively.
+. A token can be a word, a character, a subword fragment, or even an entire sentence,
+  depending on the tokenizer being used.
+. Every NLP model and every Large Language Model relies on tokenization as the first
+  step. Without it, raw human language cannot be mapped into numerical vectors that
+  Al can process.
+. This is why tokenization is considered the foundation of Natural Language Processing
+  and the core of modern Al systems.
+
+Prompt: "Analyze the current project and give me sequence diagram"
+
+Prompt + Project source code(context)
+
+Answer as output_tokens
+
+Al Tokens
+. Tokens are small units of data - words, sub-words, characters, or pixel patches -
+  that Al models process during training and inference.
+. Roughly 1,000 tokens equal about 750 English words; for Gemini models, one token
+  equals about four characters.
+. Tokenization converts raw inputs (text, images, audio, video) into numerical
+  sequences a model can learn from.
+. Al providers bill per token, with output tokens costing 3-5x more than input tokens.
+. Context windows - measured in tokens - set how much data a model can handle
+  at once, from a few thousand to over one million tokens.
+
+Al Tokens (Continue...)
+. This makes tokens both the operating language and the billing unit of generative Al.
+. Providers like OpenAI, Google, and Anthropic charge developers for every input and 
+  output token their APIs process.
+. As of early 2026, lightweight models like Gemini Flash handle input at $0.08 per
+. As of early 2026, lightweight models like Gemini Flash handle input at $0.08 per
+  million tokens, while premium reasoning models like GPT-5.2 charge $14 per million
+  output tokens. The gap between those two figures explains why understanding
+  tokens is no longer optional for anyone building, buying, or scaling Al products.
+
+How Models Use Tokens During Training?
+. Training an Al model begins with tokenizing the full training dataset.
+. For large language models, that dataset can contain billions or trillions of tokens.
+. Generally, larger token counts during training lead to higher-quality models.
+. The core training loop works through prediction.
+. The model sees a sequence of tokens and tries to guess the next one.
+. When it guesses wrong, internal parameters update to improve accuracy on the next
+  attempt. This cycle repeats across the entire dataset until the model reaches a target
+  accuracy threshold - a state called model convergence.
+
+Mode Context Window
+. Model's Context window is the maximum number of tokens it can process in a single interaction.
+. A model with a few thousand tokens of context can handle a high-resolution image or a couple
+  of pages of text.
+. Models with context windows of tens of thousands of tokens can summarize a full novel or an
+  hourlong podcast.
+. Some models now offer context windows exceeding one million tokens, allowing users to feed in
+  massive datasets for analysis in a single pass.
+. For Gemini models, one token equals about four characters, and 100 tokens translate to roughly
+  60-80 English words. Developers can check context limits programmatically - Google's API
+  exposes input and output token limits through its models endpoint, and a count_tokens function
+  lets developers preview how many tokens a request will consume before sending it.
+
+Reasoning Tokens
+. In addition to input and output tokens, these models generate a large volume of internal
+  "thinking tokens" as they work through multi-step problems.
+. Thinking tokens are also called as Reasoning tokens.
+. The reasoning tokens never appear in the user-facing response, but they occupy context-
+  window space, consume compute, and get billed as output tokens.
+. The impact on cost is significant. A single reasoning prompt can require 100x or more compute
+  compared to a standard inference pass. This is sometimes called test-time scaling or long
+  thinking - the model trades speed for quality, much like a human who takes longer to think
+  through a harder question.
+
+Multimodal TokenizationL Images, ideo, AUdio
+. Generative Al is no longer text-only, and tokenization has adapted accordingly.
+· Visual, audio, and video data all get converted into tokens at predictable rates.
+
+Data Type  | Tokenization Rate | Notes
+Text | ~1,000 tokens = 750 English words | Varies by tokenizer and language
+Small image (≤384px both sides) | 258 tokens per image | Gemini API; fixed count
+
+Large image (>384px)
+258 tokens per 768×768 tile
+Cropped and scaled into tiles
+Video
+Audio
+263 tokens per second
+32 tokens per second
+Fixed rate; Gemini API
+Fixed rate; Gemini API
+
+How Tokens Drive Al Economics?
+. Tokens are the billing meter for the entire generative Al industry.
+. Every API call consumes input tokens (the prompt) and output tokens (the response), each
+  charged at per-million-token rates set by the provider.
+. A consistent pattern across all providers: output tokens cost 3-5x more than input tokens
+  because generating new text requires more computation than processing existing input.
+· For a chatbot serving 10,000 daily users, even small differences in per-token pricing
+  compound fast.
+. One estimate puts the monthly cost for a mid-tier model at around $3,300 for 10 million
+  tokens per day.
+
+Rewind 10 to 10:20 minutes video and understand it
