@@ -1,0 +1,37 @@
+Agentic - L2 Training - Session 01
+
+Trainer - Anand Kulkarni
+
+Agenda of course (L2 training):
+Develop oneself as "Agentic AI Developer"
+
+After course, one is able to develop AI Developer
+
+No of sessions: 18 to 20
+
+Softwares required for L2 training:
+- python 3.12 or 3.13 or 3.14
+- Ollama
+- VS Code
+
+If restrictions:
+Option 1: install the software on Zensar laptop
+Option 2: Use Personal laptop
+Option 3: Windows Virtual Machine by Percipio - use Sanbox URL
+   Windows Sandbox URL:
+   https://rpg.percipio.com/linked-contents/4c80dbcd-687e-4447-b5da-4da2c76d03c1/landing
+   User: Admin
+   Password: Passw0rd!
+Option 4: Google Colab - use google login
+
+
+In AI, human brain is called as "Large Language Model (LLM)" or "Model"
+
+
+VS Code Extensions: python, jupyter
+
+How to install a python module - py -m pip install ollama
+
+
+
+
