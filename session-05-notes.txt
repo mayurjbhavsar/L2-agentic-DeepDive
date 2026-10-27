@@ -1,0 +1,86 @@
+Agenda:
+Vector embeddings
+RAG
+
+Prompt: I am Tom
+LLM Response: Hi Tom, How are you!
+
+"I" -> 324
+"am" -> 433
+"Tom" -> 3422
+
+input_tokens = [324, 433, 3422]
+
+Every token is converted into the vectors, vector is array of numbers
+
+324 -> [0.23, 0.065, -0.0012, 0.048] - Vectors
+433 -> [0.23, 0.766, 0.98] - Vectors
+3422 -> [0.23, 0.44, 0.081] - Vectors
+
+Types of search:
+
+1) Simple search
+Please find out employees working Pune office.
+SELECT * FROM EMP WHERE LOCATION = 'PUNE'
+
+2) Similarity search
+Please find out good hotels nearby
+Find out nearby hotels where in the comments you find the words like good/better/best/nice/awesome/cool
+
+3) Semantic search
+Similarity search + think from multiple dimensions
+Semantic search = Similarity search + Context/Intent of asking the question
+Example:
+  Prompt: Where can I purchase tickets?
+  Prompt + context
+
+Plot a point in 2D
+(3, 2) -> x=3, y=2
+
+Plot a point in 3D
+(3, 2, 5) -> x=3, y=2, z=5
+
+Download embedding model:
+ollama pull nomic-embed-text
+
+
+Vector database:
+The database that stores only vectors.
+Examples of Vectore databases: FAISS, Chromadb, Pinecone etc ...
+
+Vector store vs Vector database
+
+Vector database = Vector store + advanced features of database (indexing, clustering, etc.)
+
+RAG: to ran a RAG we need:
+1. A server for local models (Ollama or better yet llama.cpp)
+2. Small embedding model
+3. Bigger model for inference
+4. Vector DB like Qdrant to store vector values (it has it's own Web Gui)
+5. Some frontend app to upload files or prompts to Qdrant
+6. This will be essentially a standalone RAG application )
+
+FAISS - Facebook AI Smilarity Search
+Covert data into vectors and similarity search can happen
+
+Cosine similarity search
+
+Similarity search vs Semantic search
+
+RAG (Retrieval Augmented Generation) (Refer recording from here...)
+
+zensar-leave-policy.pdf 
+
+1) Convert zensar-leave-policy.pdf into pages (500 pages)
+2) Convert every page into chunks (1 page = 4 chunks i.e. 500 pages = 2000 chunks)
+3) Convert every chunk into vectors
+
+"I link music"
+
+Option 1:
+I - [vector_1]
+like - [vector_2]
+music - [vector_3]
+
+Option 2:
+"I like music" - [vector_1]
