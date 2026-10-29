@@ -1,0 +1,141 @@
+Agenda:
+Agentic AI (starting...) will span till most of coming sessions...
+
+Agentic AI is different concept than Generatic AI
+
+Table of Content
+
+Module 1: Al Use Cases
+Module 2: What is a Gen Al?
+Module 3: What is an Al Agent?
+Module 4: What is an Agentic Al?
+Module 5: Gen Al vs Al Agent vs Agentic Al
+Module 6: Core Components of an Agentic Al System
+Module 7: Popular Frameworks and Libraries for Agentic Al
+
+LLM restrictions:
+- LLM does not have recent events information
+- only LLM is not enough to answer recent event related questions?
+
+AI Agent
+- it's LLM having access to processed info and some particular web API/service
+- First tries to get answer from already available info or goes internet
+- AI Agent focus on task
+
+Agentic AI
+- it's LLM having LLM and multiple web APIs/services
+- Tried to get work done via LLM capability + multiple web APIs/services
+- Agentic AI focus on goal, a goal can have multiple tasks
+
+AI Agent:
+- Some entity, which is capable of communicating with LLM and external entities
+- Al agents are advanced, autonomous, or semi-autonomous software systems that analyze, plan, and execute tasks independently.
+- We do not have contorl or workflow assigned to AI Agent
+- Still AI Agent has some limitations of which services it can reach
+- Under proepr governance, they make decisions and still adhere to established business rules
+- AI Agent improves efficiency over time via learning from past experiences, 
+  this point separates it more from Generative AI, it does not have past experiences
+
+Agentic AI
+- Agentic Al refers to autonomous artificial intelligence systems designed to achieve specific goals with minimal human supervision.
+- Unlike traditional Al, which operates within predefined constraints and requires human intervention, agentic Al exhibits autonomy, adaptability, and goal-driven behavior.
+- It uses Al agents-machine learning models that mimic human decision-making-to solve problems in real-time by interacting with their environment.
+
+Gen AI vs AI Agent vs Agentic AI
+
+Feature:
+- Primary Function
+- Dependency
+- Tool Access
+- Learning Capability
+- Example Use Case
+
+Gen Al:
+- Generates new content (text, images, videos, code)
+- Works based on trained data
+- No real-time access to tools or APIs
+- Learns from historical data (not real-time)
+- Writing articles, creating designs
+
+Al Agent:
+- Performs specific predefined tasks automatically
+- Depends on predefined rules and APIs
+- Limited access to tools for specific actions
+- No continuous learning, follows instructions
+- Fetching flight data or sending alerts
+
+-- Autonomy Level
+-- Example Tools/Models
+--- Low
+--- ChatGPT, DALL.E, Midjourney
+---- Medium
+---- Customer service bots, automation systems
+
+Agentic Al:
+- Plans, reasons and acts independently toward a goal
+- Uses reasoning, planning and feedback loops
+- Dynamic access to multiple tools and APIs
+- Continuously adapts to context and outcomes
+- Booking flights based on preferences and constraints
+
+---- High
+---- AutoGPT, Devin Al, Gemini 2.0 with planning capabilities
+
+
+Popular Frameworks and Libraries for Agentic Al
+- Framework
+- LangChain / LangGraph
+-- Primary Focus
+-- General purpose LLM orchestration and data ingestion.
+--- Multi-Agent Support
+--- Moderate (via LangGraph)
+
+- Llamalndex
+
+-- Data connection, indexing, and advanced retrieval strategies.
+
+--- Basic
+
+- CrewAl
+
+-- Role-playing autonomous multi-agent orchestration.
+
+--- High
+
+- Microsoft AutoGen
+
+-- Conversational multi-agent systems with robust code execution sandboxing.
+
+--- High
+
+---- Ideal Use Case
+---- Building complex, stateful single-agent loops and Retrieval-Augmented Generation (RAG) pipelines.
+---- Data-heavy agents that need to query massive enterprise document repositories accurately.
+---- Simulating organizational workflows where distinct agents (e.g., Researcher, Writer, QA) collaborate.
+---- Engineering and coding agents that write, execute, and debug code autonomously.
+
+
+Writing program
+# STEP 1: creating LLM
+# STEP 2: 
+# STEP 3: 
+# STEP 4: 
+
+
+{'messages': [HumanMessage(content='Which is the capital of India?', additional_kwargs={}, response_metadata={}, id='cee04c28-bcf2-4ed3-848c-b5d082e4c9c8'),
+  AIMessage(content='The capital of India is **New\u202fDelhi**.', additional_kwargs={}, response_metadata={'model': 'gpt-oss:120b', 'created_at': '2026-10-29T09:46:35.835074109Z', 'done': True, 'done_reason': 'stop', 'total_duration': 308814854, 'load_duration': None, 'prompt_eval_count': 193, 'prompt_eval_duration': None, 'eval_count': 48, 'eval_duration': None, 'logprobs': None, 'model_name': 'gpt-oss:120b', 'model_provider': 'ollama'}, id='lc_run--01a1870d-ddb3-700f-ba4c-7687a540c3b0-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 193, 'output_tokens': 48, 'total_tokens': 241})]}
+
+
+{'messages': [HumanMessage(content='What is the price of Zensar stock?', additional_kwargs={}, response_metadata={}, id='2a57680a-ce3b-4ca3-b160-b292c310a2d6'),
+  AIMessage(content='', additional_kwargs={}, response_metadata={'model': 'gpt-oss:120b', 'created_at': '2026-10-29T09:48:56.825756278Z', 'done': True, 'done_reason': 'stop', 'total_duration': 377092886, 'load_duration': None, 'prompt_eval_count': 196, 'prompt_eval_duration': None, 'eval_count': 45, 'eval_duration': None, 'logprobs': None, 'model_name': 'gpt-oss:120b', 'model_provider': 'ollama'}, id='lc_run--01a18710-0444-724d-9619-00f096d20cdf-0', tool_calls=[{'name': 'get_stock_price', 'args': {'stock': 'Zensar'}, 'id': '75757229-73d7-4b7e-b94e-7a2e9377b6dc', 'type': 'tool_call'}], invalid_tool_calls=[], usage_metadata={'input_tokens': 196, 'output_tokens': 45, 'total_tokens': 241}),
+  ToolMessage(content='The stock price of Zensar is 25.50', name='get_stock_price', id='5ffad317-28fa-46f5-bb39-5b2c5ceddca8', tool_call_id='75757229-73d7-4b7e-b94e-7a2e9377b6dc'),
+  AIMessage(content='Zensar’s current stock price is **₹\u202f25.50**.', additional_kwargs={}, response_metadata={'model': 'gpt-oss:120b', 'created_at': '2026-10-29T09:48:57.274339362Z', 'done': True, 'done_reason': 'stop', 'total_duration': 305010545, 'load_duration': None, 'prompt_eval_count': 239, 'prompt_eval_duration': None, 'eval_count': 34, 'eval_duration': None, 'logprobs': None, 'model_name': 'gpt-oss:120b', 'model_provider': 'ollama'}, id='lc_run--01a18710-06ca-7661-bf0a-f9c585103b80-0', tool_calls=[], invalid_tool_calls=[], usage_metadata={'input_tokens': 239, 'output_tokens': 34, 'total_tokens': 273})]}
+
+
+Types of Tools:
+1) User defined tools (get_weather, get_stock_price)
+2) Built-in tools (LangChain provides tools - DuckDuckGoSearch, WikipediaTool, TavilySearch, many built-in tools) (https://docs.langchain.com/oss/python/integrations/tools)
+
+Tomorrow Agenda:
+Built-in tools (DuckDuckGoSearch, WikipediaTool, TavilySearch, many built-in tools)
+
