@@ -1,0 +1,23 @@
+Agenda:
+Vector embeddings (continue...)
+RAG (continue...)
+
+[PRE-RAG ACTIVITY]
+Zensar-leave-policy.pdf
+- Convert pdf into separate pages (100 pages)
+- Convert every page into sub-pages (chunks) - 1 page = 5 chunks .. it means total chunks = 5 * 100 pages = 500 chunks
+- Convert every chunk into vectors. it means I will get 500 vectors
+- Store these vectors into Vector database.
+- Build Retrieval Chain
+
+USER_PROMPT = "How many sick leave allowed in Zensar per year?"
+
+RAG
+Retrieval - Reading from your knowledge base
+Augmented - Enhancing/Increasing knowledge of LL
+Generation - Generating response to the user
+
+
+Python UI libraries:
+1) Gradio
+2) Streamlit
