@@ -1,0 +1,43 @@
+Agenda:
+Built-in tools (DuckDuckGoSearch, WikipediaTool, TavilySearch, many built-in tools)
+
+Built-in tools:
+DuckDuckGo
+WikipediaQueryRun
+TavilySearch
+
+LangGraph introduction today...
+
+LangGraph framework
+
+LangChain vs LangGraph
+
+LangGraph is an extension of LangChain framework
+
+LangChain: 'C' language
+LangGraph: 'C++' language
+
+LancgChain components: Models, Prompts, Chains (deprecated), Memory (deprecated), Vector embeddings, Tools/Agents
+
+LangGraph components: State, Node, Edges (we're going to learn them)
+
+LangChain workflow implementation: LancgChain chains (sequential chains, parallel chains, conditional chains)
+LangGraph workflow implementation: Graph
+
+Use case:
+Build an agentic AI application that resolves the employee service tickets
+  - Read the tickets
+    - (In case of LangChain) ClassifierAgent - it will understand the ticekt, whether it is Finanace or HR department
+        - It might go to HrAgent, FinanaceAgent, ITAgent, AdminAgent
+    - (In case of LangGraph) - it will be graph
+
+Node (in LangGraph) vs Tool (in LangChain)
+    - Tool is a probabilistic function whereas Node is a deterministic function i.e. they called every time irrespective of user's prompt
+
+
+Steps to create graph:
+1) Define the state
+2) Define the nodes
+3) Add edges and build the graph
+
+Next study is on LangGraph, will have deep dive from Monday on LangGraph
