@@ -1,0 +1,27 @@
+Agenda:
+Conditional edges
+LangGraph memory management
+
+Types of memories in LangGraph:
+1) State - Request level memory and share among nodes of the same graph. When request is over, the state is deleted.
+2) Checkpointer - Thread level memory, short term memory - store in the RAM or in database
+3) Store - User level memory, long term memory
+
+
+
+Checkpointer - Short Term Memory Management
+Store - Long Term Memory Management
+
+USER_1: Tom
+I want to start a new thread of discussion
+"thread_id": "Global_warming"
+        I am Tom
+        What is my name?
+        prompt_1: I stay in India
+        prompt_2: Where do I stay?
+
+"thread_id": "Tourist_places_in_India"
+        prompt_1: Where do I stay?
+
+
+USER_2: Jerry
