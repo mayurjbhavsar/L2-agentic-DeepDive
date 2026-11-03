@@ -1,0 +1,56 @@
+LangGraph more concepts
+
+Agenda:
+- Human In The Loop (HITL)
+- Parallel Node (Fan out)
+
+
+We do not have control which tol will be used
+Autonomy is good thing but it can be dangerous
+
+Use case:
+Develop an agentic AI app that finds out best stock in the market and purchases that stock for the user.
+
+@tool
+def find_best_stock():  // can be automated
+        xxxx
+
+@tool
+def purchase_best_stock():  // sensitive tool.. hence requires human approval
+        xxxx
+
+user_prompt: "Please purchase best stock in the market"
+
+
+HumanMessage
+AIMessage
+ToolMessage
+AIMessage
+
+
+HITL
+- Command - decision of the user "approve/deny"
+- interrupt() - it pauses the graph until human takes decision
+
+
+USER -> UI Application -> REST API -> HITL Code
+
+Parallel Node:
+- Use case:
+- Graph having 2 nodes
+        - node_square = x*x
+        - node_cube - x*x*x
+- START -> node_square -> node_cube -> END (not a good way when cube ndoe is not dependent on square node)
+- Parallel execution is good, fan out policy
+
+Use case:
+Write an agentic AI application that generates detailed blog for a given subject.
+
+"subject": "Global warming"
+
+BLOG:
+Introduction
+Examples
+Codes
+
+See the recording from 10:05 (approx time around 01:30)
