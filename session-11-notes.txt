@@ -1,0 +1,38 @@
+Agenda:
+- Graph integration with RAG
+- Node retries and failures
+
+Use Case:
+- Loan approval process
+  Start -> Check Eligibility Node -> some decision
+
+Need of LandGraph Failure Recovery and Retries
+
+LangGraph with retry support
+
+Apply retries using RetryPolicy
+  from langgraph.types import RetryPolicy
+  builder = StateGraph(State)
+  builder.add_node(
+    "process",
+    process_message,
+    retry_policy=RetryPolicy(max_attempts=3)
+  )
+  builder.add_edge(START, "process")
+  builder.add_edge("process", END)
+  graph = builder.compile()
+
+Apply Retry on appropriate exceptions:
+  retry_policy = RetryPolicy(
+    max_attempts=3,
+    retry_on=(
+      TimeoutError,
+      ConnectionError,
+    )
+  )
+  
+  builder.add_node(
+    "external_api",
+    external_api,
+    retry_policy=retry_policy
+  )
