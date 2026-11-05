@@ -1,0 +1,35 @@
+Agenda:
+- Agentic patterns:
+  1) ReAct pattern
+  2) Reflection pattern
+  3) Multi-agent pattern
+- Guard rails
+
+ReAct pattern: = Reasoning + Acting
+Agent = Model (Reasoning) + Tools (Acting)
+
+Reflection pattern:
+Reflection pattern does self analysis of LLM response with the help of LLM itself.
+
+Multi-agent pattern:
+                        START 
+                          │
+                      Supervisor
+           ┌──────────────┴─────────────┐
+           │              │             │
+        Research         Math         Final
+        Agent           Agent         Agent
+           │              │
+           └───────┬──────┘
+               Supervisor
+           ┌───────┴──────┐
+           │              │
+         another        Final
+         agent          Agent
+           └───────┬──────┘
+                  END
+
+
+179: │, 180: ┤, 191: ┐, 192: └, 193: ┴, 194: ┬, 195: ├, 196: ┴, 197: ┼, 217: ┘, 218: ┌
+185: ╣, 186: ║, 187: ╗, 188: ╝, 201: ╔, 202: ╩, 203: ╦, 204: ╠, 205: ═, 206: ╬, 
+
