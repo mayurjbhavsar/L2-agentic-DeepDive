@@ -1,0 +1,29 @@
+Agenda:
+Guardrails
+Basics of AI Evals
+
+User ─── Input Guardrails ─── LLM ─── Output Guardrails ─── User
+
+
+AI Evals: AI Evaluation
+
+// Developer
+add(x, y):
+  return x + y
+// Developer test cases
+assetTrue(add(5, 10), 15)
+assetTrue(add(12, 5), 17)
+
+// AI developer
+code xxxx
+// AI developer's test cases
+assetTrue ??
+
+
+L2 pending topics:
+- Basics of Harness engineering & loop engineering
+- Clause Code
+
+
+179: │, 180: ┤, 191: ┐, 192: └, 193: ┴, 194: ┬, 195: ├, 196: ─, 197: ┼, 217: ┘, 218: ┌
+186: ║, 185: ╣, 187: ╗, 200: ╚, 202: ╩, 203: ╦, 204: ╠, 205: ═, 206: ╬, 188: ╝, 201: ╔
