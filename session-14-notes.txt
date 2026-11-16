@@ -1,0 +1,32 @@
+Agenda:
+
+Prompt Enginnering - DONE alreadu
+
+Context Engineering - DONE already
+
+Harness Engineering - Today
+  - No only LLM, tools and ecosystem together
+
+Loop Engineering - Today
+  - Agent writes prompt itself
+
+Building blocks on Loop Engineering
+- Automations
+- Worktrees
+- Skills
+- Plugins / connectors
+- Sub-agents
+- State
+
+Stages in Loop Engineering
+- Observe
+- Decide
+- Act
+- Verify
+
+Cluade code
+- Instrallation locally
+  ollama launch cluade
+- model selection, now Olaama cloud models are by purchase only
+  - So used qwen3.5:4b
+  - It is taking a lot time locally to answer or do some work
