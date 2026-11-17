@@ -9,3 +9,7 @@ pip install -U google-genai
 
 ## Code
 Go to Gogole AI Studio and go to "Get Started" section and follow from there on
+
+## Troubleshoot
+# Had to upgrade below for creating ChatGoogleGenerativeAI
+pip install --upgrade langchain-core langchain-google-genai
