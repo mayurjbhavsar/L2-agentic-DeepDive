@@ -1,0 +1,19 @@
+Agenda:
+
+Claude in VS Code
+
+
+settings.json file
+- restricts claude for certain opertationso only
+
+Clause Modes
+- Manual
+  - reading/analysis is allowed edit/command approval is required
+- Accept
+  - read and modify files except restricted actions
+- Plan
+  - Do not want to write code
+- Auto
+  - 
+- Don't Ask
+  - 

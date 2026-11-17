@@ -1,0 +1,24 @@
+Tests
+1) MCQ Test
+2) Coding assessment (use case submission)
+
+Langgraph related Assessment
+
+**Loan Application Risk Assessment
+
+Build an Al-assisted loan application review service that summarizes applicant
+information, identifies missing documents, highlights potential risk factors, and generates
+an explainable recommendation for a loan officer.
+
+***Problem statement
+
+A bank receives many loan applications with supporting documents such as income
+statements, employment details, credit notes, and policy guidelines. Loan officers spend
+significant time reading documents and checking eligibility rules. The organization wants
+an internal assistant that can help officers review applications faster while keeping the final
+decision under human control.
+
+***Note:
+1. Once you complete the use case, simply copy source code of all python files into
+email body in plain text format & send the email to me anand.kulkarni1@zensar.com.
+2. Please submit the code within one week.
