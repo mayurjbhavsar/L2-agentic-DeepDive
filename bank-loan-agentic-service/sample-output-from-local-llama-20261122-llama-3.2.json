@@ -1,0 +1,53 @@
+{
+  "salary": 2250,
+  "credit_score": 800,
+  "age": 25,
+
+  "rulesInfoDocs": [
+    {
+      "source": "banking-rules-info.txt",
+      "content": "Criteria for successful loan application are as under:\n- Applicant must have a minimum monthly salary of £2,000 (or equivalent local currency)\n- Applicant must have a minimum credit score of 650 to be eligible for loan approval"
+    },
+    {
+      "source": "banking-rules-info.txt",
+      "content": "These rules are suitable as sample business rules for a banking application, eligibility engine, or AI demo workflow."
+    },
+    {
+      "source": "banking-rules-info.txt",
+      "content": "Criteria for successful Savings Account Opening Application:\n- Applicant must be at least 18 years old and provide a valid government-issued photo ID."
+    },
+    {
+      "source": "banking-rules-info.txt",
+      "content": "- Applicant must have no history of fraudulent banking activities or account restrictions."
+    }
+  ],
+
+  "llmResponse": {
+    "approval_status": "Eligible",
+    "eligibility_reason": [
+      {
+        "rule": "Minimum monthly salary",
+        "value": 2250,
+        "minimum_required": 2000
+      },
+      {
+        "rule": "Minimum credit score",
+        "value": 800,
+        "minimum_required": 650
+      }
+    ],
+    "summary": "The applicant meets both the minimum salary and credit score requirements. Therefore, the loan application is approved."
+  },
+
+  "isEligible": false,
+
+  "__interrupt__": [
+    {
+      "message": "Below is the LLM response for eligibility check for a loan application. Can you please check approval?",
+      "options": [
+        "accept",
+        "reject"
+      ]
+    }
+  ]
+}
