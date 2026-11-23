@@ -1,7 +1,8 @@
 Criteria for successful loan applciation are as under:
 - Applicant must have a monthly salary of £2,000 or more;
 - Applicant must have a credit score of more than 600 to be eligible for loan approval;
-- Applicant must be at least 21 years old and have a stable employment history of 12 months or more;
+- Applicant age must be between 21 and 55;
+- An applicant can be employee, or businessman or freelance, it does not affect the loan process at all;
 
 
 Criteria for successful Savings Account Opening Application
