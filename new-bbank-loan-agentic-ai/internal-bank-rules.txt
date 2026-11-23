@@ -1,6 +1,6 @@
 Criteria for successful loan applciation are as under:
-- Applicant must have a monthly salary of £2,000 or more;
-- Applicant must have a credit score of more than 600 to be eligible for loan approval;
+- Applicant must have a monthly salary between £2,000 and $15000;
+- Applicant must have a credit score between 600 and 1100;
 - Applicant age must be between 21 and 55;
 - An applicant can be employee, or businessman or freelance, it does not affect the loan process at all;
 
