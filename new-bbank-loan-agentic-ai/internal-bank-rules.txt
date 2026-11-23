@@ -1,0 +1,54 @@
+Criteria for successful loan applciation are as under:
+- Applicant must have a monthly salary of £2,000 or more;
+- Applicant must have a credit score of more than 600 to be eligible for loan approval;
+- Applicant must be at least 21 years old and have a stable employment history of 12 months or more;
+
+
+Criteria for successful Savings Account Opening Application
+Here are 3 simple eligibility rules for a Savings Account Opening Application:
+- Applicant must be at least 18 years old and provide a valid government-issued photo ID;
+- Applicant must submit valid proof of address and complete KYC verification requirements;
+- Applicant must make an initial deposit of at least £100 to activate the savings account;
+Alternative version with salary criteria:
+- Applicant must be at least 18 years old and have a valid photo ID;
+- Applicant must have a minimum monthly income of £1,500;
+- Applicant must pass KYC verification and make an opening deposit of at least £100;
+
+
+Demat Account Rules
+- Applicant must be at least 18 years old and complete KYC verification with valid PAN and photo ID;
+- Applicant must provide a valid bank account linked to the Demat account;
+- Applicant must successfully complete identity and address verification before account activation;
+
+
+Current Account Rules
+- Applicant must provide valid business or personal identity documents and complete KYC requirements;
+- Applicant must maintain a minimum opening deposit of £500 (or equivalent local currency);
+- Applicant must have no history of fraudulent banking activities or account restrictions;
+
+
+Fixed Deposit (FD) Rules
+- Applicant must hold an active savings or current account with the bank;
+- Minimum fixed deposit amount must be £1,000 (or equivalent local currency);
+- Deposit funds must remain locked in for the selected tenure unless premature withdrawal conditions are met;
+
+
+Combined Banking Eligibility Rules (Simple Version)
+Savings Account
+- Minimum age: 18 years
+- Valid KYC documents required
+- Minimum opening deposit: £100
+Current Account
+- Valid KYC and business/personal documents required
+- Minimum opening deposit: £500
+- Account subject to compliance checks
+Demat Account
+- Valid PAN and KYC required
+- Linked bank account mandatory
+- Minimum age: 18 years
+Fixed Deposit
+- Existing bank account required
+- Minimum deposit: £1,000
+- Funds locked for chosen tenure
+
+These rules are suitable as sample business rules for a banking application, eligibility engine, or AI demo workflow;
